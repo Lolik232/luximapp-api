@@ -1,0 +1,9 @@
+//.exe files
+*.exe
+
+//ide settings
+.idea
+.vscode
+
+//config files
+.env
