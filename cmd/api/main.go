@@ -38,7 +38,6 @@ func initDb() *mongo.Database {
 		log.Fatalf("Database ping error. %s", err.Error())
 	}
 	return client.Database("luximapp-api")
-
 }
 
 func main() {

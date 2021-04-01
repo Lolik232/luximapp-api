@@ -31,7 +31,7 @@ func NewServer(st store.IStore, handlers ...handler.IHandler) *server {
 	for _, h := range handlers {
 		h.ConfigureRoutes(router)
 	}
-	port := os.Getenv("application_port")
+	port := os.Getenv("PORT")
 	srv := &http.Server{
 		Addr:         fmt.Sprintf("0.0.0.0:%s", port),
 		Handler:      router,
